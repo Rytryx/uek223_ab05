@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  mariadb:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: CsBe123
+      MARIADB_DATABASE: transaktionsuebung
+      MARIADB_USER: lars
+      MARIADB_PASSWORD: CsBe123
+    ports:
+      - "3308:3306"
+    volumes:
+      - meinDatenVolume:/var/lib/mysql
+
+volumes:
+  meinDatenVolume:

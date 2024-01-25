@@ -1,0 +1,19 @@
+{
+    "name": "typescript-mariadb-project",
+    "version": "1.0.0",
+    "description": "Ein einfaches TypeScript-Projekt mit MariaDB-Integration",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/main.js"
+    },
+    "author": "Lars Gerencser",
+    "license": "ISC",
+    "dependencies": {
+        "mariadb": "^2.5.3"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.5",
+        "typescript": "^5.3.3"
+    }
+}
